@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Дарья Приходько](https://up.htmlacademy.ru/htmlcss/22/user/680917).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/toolx).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/22/user/70260).
 
 ---
 
