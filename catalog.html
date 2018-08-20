@@ -50,39 +50,56 @@
       </ul>
       <section class="catalog">
         <div class="filter-form">
-          <form action="#" method="post">
-            <h2>Фильтр</h2>
-            <p>Цена</p>
-            <!--Бегунок-->
-            <div class="point"></div>
-            <div class="point"></div>
-            <div class="point"></div>
-            <div class="point"></div>
-            <input type="text" value="0" name="min">-<input type="text" value="30000" name="max">
-            <p>Производители</p>
-            <div class="brand-filter">
-              <label><input type="checkbox" name="brand-Bosch" checked>BOSCH</label>
-            </div>
-            <div class="brand-filter">
-              <label><input type="checkbox" name="brand-Interskol">Интерскол</label>
-            </div>
-            <div class="brand-filter">
-              <label><input type="checkbox" name="brand-Makita" checked>Makita</label>
-            </div>
-            <div class="brand-filter">
-              <label><input type="checkbox" name="brand-DeWalt">DeWalt</label>
-            </div>
-            <div class="brand-filter">
-              <label><input type="checkbox" name="brand-Hitachi">HITACHI</label>
-            </div>
-            <p>Питание</p>
-            <div class="supply-filter">
-              <label><input type="radio" name="supply" checked>Аккумуляторные</label>
-            </div>
-            <div class="supply-filter">
-              <label><input type="radio" name="supply">Сетевые</label>
-            </div>
-            <input type="submit" value="Показать">
+          <h2>Фильтр</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Цена:</legend>
+              <!--Бегунок-->
+              <div class="point"></div>
+              <div class="point"></div>
+              <div class="point"></div>
+              <div class="point"></div>
+              <input type="text" value="0" name="min">-<input type="text" value="30000" name="max">
+            </fieldset>
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-bosch" id="filter-bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-interskol" id="filter-interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-makita" id="filter-makita" checked>
+                <label for="filter-makita">Makita</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="brand-dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">DeWalt</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                <label for="filter-hitachi">HITACHI</label>
+              </li>
+            </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Питание:</legend>
+              <ul>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-line">
+                <label for="filter-line">Сетевые</label>
+              </li>
+            </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
           </form>
         </div>
         <div class="sorting">
@@ -268,7 +285,7 @@
         <a class="button" href="#">Оформить заказ</a>
         <a class="button" href="#">Продолжить покупки</a>
       </div>
-      <span class="modal-close">x</span>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>
