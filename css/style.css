@@ -1,0 +1,193 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+
+  background-color: #293449;
+}
+
+.site-navigation,
+.user-navigation,
+.user-authorization,
+.contacts {
+  list-style: none;
+}
+
+.site-navigation {
+  background-color: #32425c;
+
+}
+
+.header-middle {
+  background-color: #f3f7f9;
+}
+
+.intro {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.promo-list {
+  list-style: none;
+}
+
+.promo-list p {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.promo-item:first-child,
+.promo-item:nth-child(5) {
+  background-color: #ffc047;
+}
+
+.promo-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.promo-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.promo-item:nth-child(4) {
+  background-color: #8ed78f;
+}
+
+.promo-item .button {
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+.promo-item .button:hover {
+  background-color: #cccccc;
+}
+
+.promo-item .button:focus {
+  background-color: #b2b2b2;
+}
+
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff;
+}
+
+.user-navigation a:hover {
+  background-color: #212a3a;
+}
+
+.user-navigation a:focus {
+  background-color: #161d29;
+  color: #8b8e94;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:focus {
+  background-color: #161d29;
+  color: #1d2739;
+}
+
+.main-header-logo {
+  background-color: #ee3643;
+}
+
+.button-order,
+.button-buy {
+  background-color: #63a63e;
+}
+
+.button-order:hover,
+.button-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.button-order:focus,
+.button-buy:focus {
+  background-color: #518534;
+  color: #8b8e94;
+}
+.user-authorization a:hover {
+  color: #ee3643;
+}
+
+.user-authorization a:focus {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.slide h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slide a {
+  background-color: #ee3643;
+}
+
+.slide a:hover {
+  background-color: #ca2c37;
+}
+
+.slide a:focus {
+  background-color: #ba2732;
+}
+
+.tools-item {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.tools-item:hover {
+  box-shadow: 10px 10px 25px #293449;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.current-price {
+  background-color: #ee3643;
+}
+.button-buy {
+  background-color:
+
+}
