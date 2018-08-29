@@ -511,3 +511,276 @@ label {
   line-height: 30px;
   color: #000000;
 }
+
+/* ----- Сеточные стили ----- */
+.main-header {
+  margin-bottom: 60px;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+ /* Временно для сетки */
+ min-height: 320px;
+
+}
+
+
+.top-navigation-wrapper {
+  width: 100%;
+  background-color: #293449;
+
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.container-top {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.top-navigation-wrapper .container-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 220px;
+  height: 47px;
+}
+
+.search {
+  width: 170px;
+  margin: 0;
+  padding: 0;
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.user-navigation {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.button-order {
+  width: 150px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 42px;
+}
+
+.header-middle-wrapper {
+  width: 100%;
+  /* Временно для сетки */
+  min-height: 160px;
+}
+
+.container-middle {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-middle-wrapper .container-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro {
+  width: 220px;
+  margin: 0;
+  padding: 0;
+
+
+  /* Временно для сетки */
+  min-height: 75px;
+}
+
+.contacts {
+  width: 270px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 70px;
+
+}
+
+.user-authorization {
+  width: 285px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 45px;
+}
+
+.header-bottom-wrapper {
+  width: 100%;
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.container-bottom {
+  width: 950px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-bottom-wrapper .container-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  width: 940px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 60px;
+}
+
+.promo {
+  width: 940px;
+
+  /* Временно для сетки */
+  min-height: 410px;
+}
+
+.promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-item {
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+
+  /* Временно для сетки */
+  min-height: 125px;
+}
+
+.promo-item:nth-child(3) {
+  margin-right: 0;
+}
+
+.promo-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.slides {
+  width: 180px;
+
+  /* Временно для сетки */
+  min-height: 270px;
+}
+
+.popular {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+
+  min-height: 950px;
+  margin-bottom: 25px;
+
+}
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  min-height: 425px;
+
+}
+
+.tools-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  /* Временно для сетки */
+  min-height: 320px;
+}
+
+.tools-item {
+  width: 220px;
+  /* Временно для сетки */
+  min-height: 320px;
+}
+.brand-container {
+  width: 940px;
+
+  /* Временно для сетки */
+  min-height: 310px;
+}
+
+.popular-brands {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-left: 0;
+
+  list-style: none;
+  width: 940px;
+
+  /* Временно для сетки */
+  min-height: 310px;
+}
+
+.brand-items {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+
+  /* Временно для сетки */
+  min-height: 140px;
+}
+
+.about-contacts {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  padding: 10px 20px;
+}
+
+.about-company {
+  width: 540px;
+ /* Временно для сетки */
+ min-height: 400px;
+}
+
+.contacts {
+  width: 300px;
+ /* Временно для сетки */
+ min-height: 400px;
+}
