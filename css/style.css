@@ -271,6 +271,7 @@ a {
 .old-price {
   font-size: 17px;
   line-height: 18px;
+  font-weight: bold;
   color: #a9a9a9;
   text-decoration: line-through;
 }
@@ -278,6 +279,7 @@ a {
 .current-price {
   font-size: 17px;
   line-height: 18px;
+  font-weight: bold;
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -407,7 +409,7 @@ a {
   box-shadow: 10px 10px 25px #293449;
 }
 
-.container h1 {
+.page-title {
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
@@ -527,23 +529,27 @@ label {
   background-color: #293449;
 }
 
-.container-header {
+.container {
+  display: flex;
+  flex-direction: column;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.top-navigation-wrapper .container-header {
+.top-navigation-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
 .main-header-logo {
+  display: flex;
   width: 220px;
   height: 47px;
 }
 
 .search {
+  display: flex;
   width: 170px;
   margin: 0;
   padding: 0;
@@ -568,13 +574,7 @@ label {
   width: 100%;
 }
 
-.container-header {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.header-middle-wrapper .container-header {
+.header-middle-wrapper .container {
   display: flex;
   justify-content: space-between;
 }
@@ -603,13 +603,7 @@ label {
   width: 100%;
 }
 
-.container-header {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
-.header-bottom-wrapper .container-header {
+.header-bottom-wrapper .container {
   display: flex;
   justify-content: space-between;
 }
@@ -621,12 +615,6 @@ label {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .promo-slide {
@@ -780,13 +768,6 @@ label {
   width: 100%;
   margin: 0;
   background-color: #293449;
-}
-
-.container-footer {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
 }
 
 .navigation-promo {
