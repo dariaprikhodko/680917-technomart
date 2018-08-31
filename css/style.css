@@ -531,10 +531,15 @@ label {
 
 .container {
   display: flex;
-  flex-direction: column;
+
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .top-navigation-wrapper {
@@ -842,6 +847,7 @@ label {
 
 .filter-form {
   width: 220px;
+  margin-right: 20px;
 }
 
 .tools {
