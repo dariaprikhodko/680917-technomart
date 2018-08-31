@@ -253,7 +253,7 @@ a {
 .tools-item,
 .brand-items {
   list-style: none;
-  border: 1px solid #e5e5e5;
+  /*border: 1px solid #e5e5e5;*/
 }
 
 .tools-item:hover,
@@ -344,16 +344,16 @@ a {
   color: #ffffff;
 }
 
-.promo-list a {
+.promo-list-footer a {
   color: #ffd180;
 }
 
-.promo-list a:hover,
+.promo-list-footer a:hover,
 .footer-navigation a:hover {
   text-decoration: underline;
 }
 
-.promo-list a:active,
+.promo-list-footer a:active,
 .footer-navigation a:active {
   opacity: 0.5;
 }
@@ -515,36 +515,25 @@ label {
 /* ----- Сеточные стили ----- */
 .main-header {
   margin-bottom: 60px;
-
-  /* Временно для сетки */
-  min-height: 320px;
 }
 
 .main-navigation {
   display: flex;
   flex-direction: column;
- /* Временно для сетки */
- min-height: 320px;
-
 }
-
 
 .top-navigation-wrapper {
   width: 100%;
   background-color: #293449;
-
-
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
-.container-top {
-  width: 950px;
+.container-header {
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.top-navigation-wrapper .container-top {
+.top-navigation-wrapper .container-header {
   display: flex;
   justify-content: space-between;
 }
@@ -558,45 +547,34 @@ label {
   width: 170px;
   margin: 0;
   padding: 0;
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .user-navigation {
-  width: 300px;
+  display: flex;
+  width: 280px;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .button-order {
   width: 150px;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 42px;
 }
 
 .header-middle-wrapper {
   width: 100%;
-  /* Временно для сетки */
-  min-height: 160px;
 }
 
-.container-middle {
-  width: 950px;
+.container-header {
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.header-middle-wrapper .container-middle {
+.header-middle-wrapper .container-header {
   display: flex;
   justify-content: space-between;
 }
@@ -605,61 +583,44 @@ label {
   width: 220px;
   margin: 0;
   padding: 0;
-
-
-  /* Временно для сетки */
-  min-height: 75px;
 }
 
 .contacts {
   width: 270px;
-  margin: 0;
+  margin: 0
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 70px;
-
 }
 
 .user-authorization {
-  width: 285px;
+  display: flex;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 45px;
 }
 
 .header-bottom-wrapper {
   width: 100%;
-  /* Временно для сетки */
-  min-height: 60px;
 }
 
-.container-bottom {
-  width: 950px;
+.container-header {
+  width: 940px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
-.header-bottom-wrapper .container-bottom {
+.header-bottom-wrapper .container-header {
   display: flex;
   justify-content: space-between;
 }
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
   width: 940px;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 60px;
 }
 
 .container {
@@ -668,187 +629,242 @@ label {
   padding: 0 10px;
 }
 
-.promo-wrapper {
-  display: flex;
-  flex-direction: row;
+.promo-slide {
   width: 940px;
-
-  /* Временно для сетки */
-  min-height: 410px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .promo-list {
   display: flex;
-  flex-direction: row;
-  width: 940px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo-list:last-child {
+  margin-right: 0;
 }
 
 .promo-item {
   width: 300px;
-  height: 120px;
   margin-right: 20px;
   margin-bottom: 20px;
+}
+
+.promo-slide-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .list-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 940px;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+.slider-promo {
+  display: flex;
+  margin-right: 20px;
+  width: 620px;
 }
 
 .popular {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   width: 940px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+}
 
+.heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  background-color: #f9f5f0;
 }
 
 .tools-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  /* Временно для сетки */
-  min-height: 320px;
 }
 
 .tools-item {
   width: 220px;
-  /* Временно для сетки */
-  min-height: 320px;
+  margin-right: 20px;
 }
-.brand-container {
-  width: 940px;
 
-  /* Временно для сетки */
-  min-height: 310px;
+.popular-labels {
+  display: flex;
+  flex-direction: column;
+  width: 940px;
+  margin-bottom: 20px;
 }
 
 .popular-brands {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
-  margin-left: 0;
-
-  list-style: none;
   width: 940px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
-  /* Временно для сетки */
-  min-height: 310px;
+.brand-items:nth-child(4n) {
+  margin-right: 0;
 }
 
 .brand-items {
   width: 220px;
   margin-bottom: 20px;
-  margin-right: 10px;
+  margin-right: 20px;
+}
 
-  /* Временно для сетки */
-  min-height: 140px;
+.services {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-bottom: 65px;
+  width: 100%;
+  background-color: #f4f8f9;
+
+}
+
+.slider-services {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  margin-right: 60px;
+}
+
+.slider-menu {
+  display: flex;
+}
+
+.slider-description {
+  display: flex;
+  width: 640px;
 }
 
 .about-contacts {
   display: flex;
-  justify-content: space-between;
-  width: 940px;
-  padding: 10px 20px;
+
 }
 
 .about-company {
   width: 540px;
- /* Временно для сетки */
+  margin-right: 100px;
 
 }
 
 .contacts {
   width: 300px;
- /* Временно для сетки */
-
 }
 
 .main-footer {
-   margin-top: 85px;
-
-   /* Временно для сетки */
-   background: none;
-   min-height: 115px;
+  width: 100%;
+  margin-top: 85px;
 }
 
-.footer-top-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-
+.footer-navigation {
   width: 100%;
+  margin: 0;
   background-color: #32425c;
 }
 
-.container-logo-contacts {
-  width: 380px;
-  margin-left: 130px;
-  margin-bottom: 0;
+.copyright-social {
+  width: 100%;
+  margin: 0;
+  background-color: #293449;
+}
+
+.container-footer {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
 .navigation-promo {
-  width: 560px;
-  margin-right: 120px;
-}
-
-.copyright-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 550px;
 }
 
-
-.copyright {
-  width: 240px;
+.navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.social {
-  width: 140px;
 
+.promo-list-footer {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-right: 120px;
+  width: 132px;
+  list-style: none;
 }
 
 .feedback-developed {
-  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+}
 
+.copyright {
+  width: 230px;
+  margin-right: 160px;
+}
+
+.catalog-sorting {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
 }
 
 .page-title {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-
-  /* Временно для сетки */
-  min-height: 35px;
+  background-color: #f2f6f8;
 }
 
 .breadcrumbs {
+  display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 20px;
+}
 
-  /* Временно для сетки */
-  min-height: 24px;
+.sorting {
+  display: flex;
+}
+
+.by-property,
+.control-buttons {
+  display: flex;
 }
 
 .filter-form {
   width: 220px;
-
-  /* Временно для сетки */
-  min-height: 746px;
 }
 
 .tools {
   width: 700px;
-  min-height: 720px;
 }
 
 .catalog-columns {
@@ -856,36 +872,39 @@ label {
   justify-content: space-between;
 }
 
-.tools-item {
+.catalog-item {
   width: 220px;
-  margin-bottom: 25px;
-  margin-right: 10px;
-
-  /* Временно для сетки */
-  min-height: 320px;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
 
-.tools-list {
-  display: flex;
-  flex-direction: row;
+.catalog-list {
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
   margin-bottom: 55px;
-
   list-style: none;
 }
 
-.tools-item:nth-child(3n) {
+.catalog-item:nth-child(3n) {
   margin-right: 0;
 }
 
 .pagination-list {
+  display: flex;
   padding: 0;
   margin: 0;
+}
 
-  list-style: none;
+.additional-info {
+  width: 100%;
+  background-color: #f2f6f8;
+}
 
-  /* Временно для сетки */
-  min-height: 47px;
+.info-wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer-catalog {
+  margin: 0;
 }
