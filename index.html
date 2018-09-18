@@ -12,16 +12,11 @@
       <nav class="main-navigation">
         <div class="top-navigation-wrapper">
           <div class="container">
-            <a class="main-header-logo" href="index.html" aria-label="Логотип Техномарт">
-              <img src="img/main-logo.png" width="220" height="47" alt="Логотип интернет-магазина Техномарт">
-            </a>
+            <a class="main-header-logo" href="index.html" aria-label="Логотип Техномарт">Техномарт</a>
             <form class="search" method="get" action="https://echo.htmlacademy.ru">
               <div class="search-container">
-                <div class="search-icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="path-1" fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
-                  </svg>
-                </div>
                 <input type="search" class="search-field" placeholder="Поиск:" aria-label="Поле поиска">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="path-1" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
                 <button type="submit"><span class="visually-hidden">Кнопка поиска</span></button>
               </div>
             </form>
@@ -44,15 +39,12 @@
                   <p class="phone">+7 (812) 555-05-55</p>
                 </li>
                 <li>
-                  <p class="address">г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+                  <p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </li>
               </ul>
               <ul class="user-authorization">
                 <li><a class="login-link" href="#">Войти
-                  <div class="login-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="login-svg" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-                    </svg>
-                  </div>
+                  <svg class="login-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="login-svg" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
                 </a></li>
                 <li><a class="registration-link" href="#">Регистрация</a></li>
               </ul>
@@ -76,7 +68,7 @@
         </section>
       </nav>
     </header>
-    <main class="container">
+    <main class="container main-container">
       <div class="wrapper">
         <section class="promo-slide">
           <h2 class="visually-hidden">Промо-информация</h2>
@@ -115,21 +107,25 @@
                   <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
                 </div>
                 <div class="slider-controls-arrows">
-                  <label class="arrow-left" for="product-1"></label>
-                  <label class="arrow-right" for="product-2"></label>
+                  <span class="arrow-left"></span>
+                  <span class="arrow-right"></span>
                 </div>
-                <ul class="slider-list">
-                  <li class="slider-item">
+                <div class="slider-list">
+                  <div class="slider-item">
+                    <div class="slide-wrapper">
                     <h2 class="title">Дрели</h2>
                     <p class="text">Соседям на радость!</p>
                     <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
-                  </li>
-                  <li class="slider-item">
+                  </div>
+                  </div>
+                  <div class="slider-item">
+                    <div class="slide-wrapper">
                     <h2 class="title">Перфораторы</h2>
                     <p class="text">Настоящие мужские игрушки</p>
                     <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
-                  </li>
-                </ul>
+                    <div class="slide-wrapper">
+                  </div>
+                </div>
             </section>
           </div>
         </section>
@@ -191,7 +187,7 @@
         </section>
         <section class="popular-labels">
           <div class="heading-wrapper">
-          <h2 class="heading">Популярные производители</h2>
+          <h2 class="heading">Популярные производители:</h2>
           <a class="button button-red" href="#">Все производители</a>
         </div>
           <ul class="popular-brands">
@@ -271,8 +267,8 @@
             </div>
             <div class="contacts-footer">
             <p class="contact-list">
-              г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
-              +7(812)555-05-55
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55
             </p>
             </div>
           </div>
@@ -323,7 +319,7 @@
             </div>
             <div class="developed">
               <b>Разработано:</b>
-              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+              <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
           </div>
         </div>
