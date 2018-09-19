@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
     <title>Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -106,27 +107,25 @@
                   <label class="slider-controls-item slider-controls-item--1" for="product-1"></label>
                   <label class="slider-controls-item slider-controls-item--2" for="product-2"></label>
                 </div>
-                <div class="slider-controls-arrows">
-                  <span class="arrow-left"></span>
-                  <span class="arrow-right"></span>
-                </div>
+                <button class="arrow-left"></button>
+                <button class="arrow-right"></button>
                 <div class="slider-list">
                   <div class="slider-item">
                     <div class="slide-wrapper">
-                    <h2 class="title">Дрели</h2>
-                    <p class="text">Соседям на радость!</p>
-                    <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
-                  </div>
+                      <h2 class="title">Дрели</h2>
+                      <p class="text">Соседям на радость!</p>
+                      <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
+                    </div>
                   </div>
                   <div class="slider-item">
                     <div class="slide-wrapper">
-                    <h2 class="title">Перфораторы</h2>
-                    <p class="text">Настоящие мужские игрушки</p>
-                    <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
-                    <div class="slide-wrapper">
+                      <h2 class="title">Перфораторы</h2>
+                      <p class="text">Настоящие мужские игрушки</p>
+                      <a class="button button-red button-slider" href="catalog.html">Открыть каталог</a>
+                    </div>
                   </div>
                 </div>
-            </section>
+              </section>
           </div>
         </section>
         <section class="popular">
@@ -328,26 +327,32 @@
     <section class="modal-feedback">
       <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="feedback-item">
+      <div class="feedback-fields">
+        <div class="login-email">
+        <p class="feedback-item feedback-login">
           <label for="login">Ваше имя</label>
           <input id="login" type="text" name="name" value="" placeholder="Имя Фамилия">
         </p>
-        <p class="feedback-item">
+        <p class="feedback-item feedback-email">
           <label for="email">Ваш e-mail</label>
-          <input id="email" type="email" name="email-adress" value="" placeholder="email@example.com">
+          <input id="email" type="text" name="email-adress" value="" placeholder="email@example.com">
         </p>
-        <p class="feedback-item">
+      </div>
+        <p class="feedback-item feedback-text">
           <label for="text">Текст письма</label>
-          <textarea rows="10" cols="20" id="text" placeholder="В свободной форме"></textarea>
+          <textarea rows="6" cols="61" id="text" placeholder="В свободной форме"></textarea>
         </p>
-        <input type="submit" value="Отправить">
+      </div>
+      <div class="button-area">
+        <input type="submit" class="button button-red button-modal" value="Отправить">
+      </div>
       </form>
       <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Где мы находимся</h2>
       <p><img src="img/map-big.jpg" width="1736" height="779" alt="Схема проезда"></p>
-      <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
   </body>
 </html>
