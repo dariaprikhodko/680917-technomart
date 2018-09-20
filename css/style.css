@@ -108,6 +108,7 @@ input[type="radio"].visually-hidden {
 
 .button-buy:active {
   box-shadow: none;
+  color: #ffffff;
 }
 
 .site-navigation,
@@ -510,20 +511,20 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.sorting-item a {
+.sorting-item {
   line-height: auto;
   color: #000000;
   border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
 }
 
-.sorting-item a:hover,
-.sorting-item a:focus {
+.sorting-item:hover,
+.sorting-item:focus {
   opacity: 1;
   border-bottom: 1px solid #ee3643;
 }
 
-.sorting-item a:active {
+.sorting-item:active {
   color: #ee3643;
   border: none;
 }
@@ -1470,7 +1471,7 @@ input.search-field:focus {
 
 .button-buy:active::before,
 .button-buy:active::before {
-  opacity: 0.3;
+  opacity: 1;
 }
 
 .tools-item .actions {
@@ -1618,7 +1619,7 @@ input.search-field:focus {
   position: absolute;
   z-index: 100;
   display: block;
-  left: 80px;
+  left: 120px;
   width: 240px;
   text-align: center;
   font-size: 0;
@@ -2616,24 +2617,27 @@ label:hover::before,
   position: fixed;
   display: none;
   z-index: 9999;
-  top: 30%;
-  left: 10%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .fixed-overlay-map {
   position: fixed;
   display: none;
   z-index: 9999;
-  top: 30%;
-  left: 20%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .fixed-overlay-notification {
   position: fixed;
   display: none;
   z-index: 9999;
-  top: 40%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-feedback {
