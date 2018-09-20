@@ -2612,12 +2612,38 @@ label:hover::before,
 }
 
 /*стилизуем окно обратной связи*/
+.fixed-overlay {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  top: 30%;
+  left: 10%;
+}
+
+.fixed-overlay-map {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  top: 30%;
+  left: 20%;
+}
+
+.fixed-overlay-notification {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  top: 40%;
+  left: 30%;
+}
+
 .modal-feedback {
+  z-index: 45;
   display: flex;
   flex-direction: column;
   width: 620px;
   box-sizing: border-box;
   border-top: 7px solid #ee3643;
+  background-color: #ffffff;
 }
 
 .login-email {
@@ -2799,6 +2825,7 @@ label:hover::before,
   width: 620px;
   box-sizing: border-box;
   border-top: 7px solid #ee3643;
+  background-color: #ffffff;
 }
 
 .notification {

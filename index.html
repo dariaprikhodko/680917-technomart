@@ -330,35 +330,39 @@
         </div>
       </section>
     </footer>
-    <section class="modal-feedback">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-      <div class="feedback-fields">
-        <div class="login-email">
-        <p class="feedback-item feedback-login">
-          <label for="login">Ваше имя</label>
-          <input id="login" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="feedback-item feedback-email">
-          <label for="email">Ваш e-mail</label>
-          <input id="email" type="text" name="email-adress" value="" placeholder="email@example.com">
-        </p>
-      </div>
-        <p class="feedback-item feedback-text">
-          <label for="text">Текст письма</label>
-          <textarea rows="6" cols="61" id="text" placeholder="В свободной форме"></textarea>
-        </p>
-      </div>
-      <div class="button-area">
-        <input type="submit" class="button-red button-modal" value="Отправить">
-        <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-      </div>
-      </form>
+    <section class="fixed-overlay">
+      <section class="modal-feedback">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="feedback-fields">
+            <div class="login-email">
+              <p class="feedback-item feedback-login">
+              <label for="login">Ваше имя</label>
+              <input id="login" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p class="feedback-item feedback-email">
+              <label for="email">Ваш e-mail</label>
+              <input id="email" type="text" name="email-adress" value="" placeholder="email@example.com">
+              </p>
+            </div>
+            <p class="feedback-item feedback-text">
+              <label for="text">Текст письма</label>
+              <textarea rows="6" cols="61" id="text" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
+          <div class="button-area">
+            <input type="submit" class="button-red button-modal" value="Отправить">
+            <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+          </div>
+        </form>
+      </section>
     </section>
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Где мы находимся</h2>
-      <p><img src="img/map-big.jpg" width="1736" height="779" alt="Схема проезда"></p>
-      <button class="modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <section class="fixed-overlay-map">
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <p><img src="img/map-big.jpg" width="1736" height="779" alt="Схема проезда"></p>
+        <button class="modal-close-map" type="button"><span class="visually-hidden">Закрыть</span></button>
+      </section>
     </section>
   </body>
 </html>
