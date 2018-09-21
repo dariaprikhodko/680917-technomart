@@ -491,7 +491,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item {
-  line-height: auto;
+  line-height: 20px;
   color: #000000;
   border-bottom: 1px dotted #ee3643;
   opacity: 0.3;
@@ -504,11 +504,14 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-item:active {
-  color: #ee3643;
-  border: none;
+  opacity: 1;
+  border-bottom: 1px solid #ee3643;
 }
 
 .active-sorting {
+  font-family: "PT Sans", sans-serif, Arial;
+  line-height: 18px;
+  text-transform: uppercase;
   color: #ee3643;
   border: none;
   opacity: 1;
@@ -524,7 +527,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-item {
   line-height: 18px;
-  border: 1px solid #00000;
+  border: 1px solid #000000;
 }
 
 .pagination-item:last-child {
@@ -596,7 +599,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 85px;
-  padding: 0;
+  padding: 0 10px;
 }
 
 .main-container {
@@ -1705,11 +1708,11 @@ input.search-field:focus {
   display: none;
   width: 698px;
   padding: 0;
-  padding-bottom: 130px;
   box-sizing: border-box;
 }
 
 .slider-services-item:nth-child(1) {
+  padding-bottom: 129px;
   background-image: url("../img/delivery-photo.png");
   background-repeat: no-repeat;
   background-position: 100% 100%;
@@ -1728,7 +1731,7 @@ input.search-field:focus {
 }
 
 .slider-services-item:nth-child(3) {
-  padding-bottom: 105px;
+  padding-bottom: 104px;
   background-image: url("../img/credit-photo.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
@@ -1972,7 +1975,6 @@ input.search-field:focus {
   padding-top: 39px;
   padding-left: 2px;
   padding-bottom: 39px;
-
 }
 
 .footer-social {
@@ -2114,7 +2116,6 @@ input.search-field:focus {
   margin: 0;
   padding: 0;
 }
-
 
 .personal-account a,
 .personal-orders a {
