@@ -1331,7 +1331,7 @@ input.search-field:focus {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 19px;
   list-style: none;
 }
 
@@ -1779,7 +1779,7 @@ input.search-field:focus {
 .about-contacts {
   display: flex;
   flex-direction: row;
-  padding-top: 11px;
+  padding-top: 12px;
 }
 
 .about-company {
