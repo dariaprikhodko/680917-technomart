@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
@@ -38,10 +38,6 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.visually-hidden {
-  visibility: hidden;
-}
-
 .site-navigation,
 .user-navigation,
 .user-authorization,
@@ -51,14 +47,12 @@ input[type="radio"].visually-hidden {
 
 .user-navigation a,
 .button-order {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .user-authorization a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -117,7 +111,6 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
@@ -138,7 +131,6 @@ input[type="radio"].visually-hidden {
 }
 
 .intro {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -146,7 +138,6 @@ input[type="radio"].visually-hidden {
 }
 
 .phone {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -154,7 +145,6 @@ input[type="radio"].visually-hidden {
 }
 
 .address {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
@@ -163,7 +153,6 @@ input[type="radio"].visually-hidden {
 .button-red,
 .button-buy,
 .button-mark {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -175,7 +164,6 @@ input[type="radio"].visually-hidden {
 }
 
 .button-continue {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -188,7 +176,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-list p {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
@@ -213,7 +200,6 @@ input[type="radio"].visually-hidden {
 }
 
 .promo-item .button-promo {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -238,7 +224,6 @@ input[type="radio"].visually-hidden {
   padding: 10px 10px;
   background-color: #ee3643;
   box-shadow: inset 0 -5px  #9a212a;
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
@@ -257,7 +242,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-promo h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
@@ -266,7 +250,6 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-promo p {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -287,13 +270,14 @@ input[type="radio"].visually-hidden {
 
 .popular h2,
 .popular-labels h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
   color: #32425c;
 }
+
 .tools-item h3 {
+  font-family: "PT Sans", sans-serif, Arial;
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
@@ -309,14 +293,16 @@ input[type="radio"].visually-hidden {
 .tools-item:focus,
 .brand-items:focus {
   box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
+  border-color: transparent;
 }
 
-.brand-item:active {
+.popular-brands a:active {
   box-shadow: 0 0 15px 3px rgba(0,0,0,0.35);
-  opacity: 1;
+  opacity: 0.3;
 }
 
 .old-price {
+  font-family: "PT Sans", sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -325,6 +311,7 @@ input[type="radio"].visually-hidden {
 }
 
 .current-price {
+  font-family: "PT Sans", sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
@@ -347,19 +334,18 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-services h3 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
 }
 
-.slider-services h3:hover,
-.slider-services h3:focus {
+.slider-services-controls-item:hover,
+.slider-services-controls-item:focus {
   background-color: #293449;
 }
 
-.slider-services h3:active {
+.slider-services-controls-item:active {
   color: #32425c;
   background-color: #ffffff;
 }
@@ -368,7 +354,6 @@ input[type="radio"].visually-hidden {
 .about-company h2,
 .contacts h2,
 .additional-info h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -376,7 +361,6 @@ input[type="radio"].visually-hidden {
 }
 
 .logistic-items {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   list-style: none;
@@ -388,7 +372,6 @@ input[type="radio"].visually-hidden {
 
 .footer-navigation a,
 .contact-list {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
@@ -409,7 +392,6 @@ input[type="radio"].visually-hidden {
 }
 
 .copyright-social {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -453,7 +435,6 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-item {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
@@ -466,7 +447,6 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -475,7 +455,6 @@ input[type="radio"].visually-hidden {
 
 .personal-orders a,
 .personal-account a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
@@ -483,7 +462,6 @@ input[type="radio"].visually-hidden {
 }
 
 .user-bio a {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -507,6 +485,7 @@ input[type="radio"].visually-hidden {
 .sorting h2,
 .filter-form h2,
 .by-property a {
+  font-family: "PT Sans", sans-serif, Arial;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -532,6 +511,7 @@ input[type="radio"].visually-hidden {
 .active-sorting {
   color: #ee3643;
   border: none;
+  opacity: 1;
 }
 
 .arrow-active {
@@ -556,23 +536,27 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-legend {
+.filter-producers legend,
+.supply legend,
+.filter-item legend {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-label {
+.filter-producers label,
+.supply label {
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 20px;
 }
 
 .notification p {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
-  line-height: 30px;
   color: #000000;
+  line-height: 30px;
 }
 
 /*Сеточные стили*/
@@ -593,9 +577,26 @@ label {
 
 .container {
   display: flex;
+  flex-direction: column;
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+.container-footer,
+.container-header {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-about {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 85px;
+  padding: 0;
 }
 
 .main-container {
@@ -613,6 +614,14 @@ label {
   justify-content: space-between;
 }
 
+.header-middle {
+  margin-bottom: 59px;
+}
+
+.header-middle-catalog {
+  margin-bottom: 9px;
+}
+
 .main-header-logo {
   position: absolute;
   display: block;
@@ -627,7 +636,6 @@ label {
   height: 42px;
   margin-left: 220px;
   box-sizing: border-box;
-
 }
 
 .search-field {
@@ -655,7 +663,6 @@ label {
   fill: #ffffff;
 }
 
-
 .search input::-webkit-input-placeholder {
   font-family: "Cuprum", sans-serif, Arial;
   font-size: 17px;
@@ -669,6 +676,7 @@ label {
   font-size: 17px;
   font-weight: 400;
   color: #ffffff;
+  opacity: 1;
 }
 
 .search input:-moz-placeholder {
@@ -677,6 +685,7 @@ label {
   line-height: 18px;
   font-weight: 400;
   color: #ffffff;
+  opacity: 1;
 }
 
 .search input:-ms-input-placeholder {
@@ -698,7 +707,6 @@ label {
 .search input:focus::-moz-placeholder {
   font-family: "Cuprum", sans-serif, Arial;
   font-size: 17px;
-  line-height: 18px;
   font-weight: 400;
   color: #000000;
 }
@@ -717,6 +725,14 @@ label {
   line-height: 18px;
   font-weight: 400;
   color: #000000;
+}
+
+input.search-field:hover+svg {
+  opacity: 1;
+}
+
+input.search-field:hover{
+  background-color: #212a3a;
 }
 
 input.search-field:focus+svg {
@@ -1125,7 +1141,8 @@ input.search-field:focus {
   cursor: pointer;
   }
 
-#product-1:checked~.slider-controls label[for=product-1], #product-2:checked~.slider-controls label[for=product-2] {
+#product-1:checked~.slider-controls label[for=product-1],
+#product-2:checked~.slider-controls label[for=product-2] {
   background: #ee3643;
 }
 
@@ -1358,24 +1375,24 @@ input.search-field:focus {
 }
 
 .tool-photo > img {
-  margin:auto;
+  margin: auto;
 }
 
-.BFG9000 {
+.model-9000 {
   padding-top: 5px;
 }
 
-.BFG3000 {
+.model-3000 {
   padding-top: 27px;
   padding-right: 10px;
 }
 
-.BFG6000 {
+.model-6000 {
   padding-top: 20px;
   padding-right: 20px;
 }
 
-.BFG2000 {
+.model-2000 {
   padding-top: 27px;
   padding-right: 25px;
 }
@@ -1401,7 +1418,7 @@ input.search-field:focus {
   border-radius: 3px;
 }
 
-.tools-item .current-price:after {
+.tools-item .current-price::after {
   content: "";
   position: absolute;
   top: 0;
@@ -1575,7 +1592,6 @@ input.search-field:focus {
 
 .about-services h2,
 .slider-services-item h2 {
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
@@ -1598,6 +1614,7 @@ input.search-field:focus {
 .slider-services-item p {
   margin: 0;
   margin-left: 79px;
+  font-family: "PT Sans", sans-serif, Arial;
 }
 
 .about-services p {
@@ -1607,6 +1624,7 @@ input.search-field:focus {
   margin-top: 30px;
   margin-bottom: 69px;
   padding: 0;
+  font-family: "PT Sans", sans-serif, Arial;
 }
 
 .slider-services {
@@ -1629,11 +1647,10 @@ input.search-field:focus {
 .slider-services-controls label {
   display: block;
   width: 218px;
-  padding: 14px 0 17px 22px;
+  padding: 12px 0 17px 22px;
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  font-family: "Cuprum"," Arial", sans-serif;
   text-align: left;
   color: #ffffff;
   background-color: #32425c;
@@ -1662,7 +1679,8 @@ input.search-field:focus {
 .slider-services input#slide3:checked~.slider-services-controls label[for=slide3] {
   background-color: #ffffff;
   color: #32425c;
-  border: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 }
 
 .slider-services-controls::before {
@@ -1757,6 +1775,7 @@ input.search-field:focus {
 
 .about-contacts {
   display: flex;
+  flex-direction: row;
   padding-top: 11px;
 }
 
@@ -1775,6 +1794,7 @@ input.search-field:focus {
   margin: 0;
   margin-bottom: 23px;
   padding: 0;
+  font-family: "PT Sans", sans-serif, Arial;
 }
 
 .logistic {
@@ -1831,7 +1851,6 @@ input.search-field:focus {
 
 .main-footer {
   width: 100%;
-  margin-top: 85px;
 }
 
 .main-footer-logo {
@@ -1887,7 +1906,7 @@ input.search-field:focus {
   display: flex;
   flex-direction: column;
   width: 610px;
-  padding-top: 39px;
+  padding-top: 38px;
 }
 
 .logo-contacts-wrapper {
@@ -2003,13 +2022,21 @@ input.search-field:focus {
   padding: 0;
 }
 
+.login-logout-list {
+  display: flex;
+  width: 300px;
+  margin-top: 46px;
+  box-sizing: border-box;
+  list-style: none;
+  background-color: #ffffff;
+}
+
 .user-bio {
   position: relative;
   display: block;
-  width: 300px;
+  width: 240px;
   box-sizing: border-box;
   margin-bottom: 0;
-  margin-top: 46px;
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 49px;
@@ -2035,17 +2062,18 @@ input.search-field:focus {
 .logout-link {
   position: absolute;
   display: block;
+  width: 60px;
   top: 45px;
   right: 2px;
+  background-color: #ffffff;
 }
 
 .logout-icon {
-  position: absolute;
   display: block;
-  top: 12px;
-  right: 8px;
   width: 21px;
   height: 21px;
+  margin-top: 15px;
+  margin-left: 32px;
   opacity: 0.3;
 }
 
@@ -2056,7 +2084,7 @@ input.search-field:focus {
 
 .orders-account {
   display: flex;
-  margin-top: 7px;
+  margin-top: 8px;
   margin-left: 21px;
 }
 
@@ -2113,7 +2141,6 @@ input.search-field:focus {
   display: block;
   box-sizing: border-box;
   padding: 30px 10px 30px 28px;
-  padding-bottom: ;
   background-color: #f2f6f8;
 }
 
@@ -2142,6 +2169,7 @@ input.search-field:focus {
 
 .breadcrumbs a {
   color: #000000;
+  font-family: "PT Sans", sans-serif, Arial;
 }
 
 .home-icon {
@@ -2167,8 +2195,8 @@ input.search-field:focus {
   margin-bottom: 20px;
   padding: 0;
   padding-top: 6px;
-  padding-left: 18px;
-  padding-bottom: 8px;
+  padding-left: 20px;
+  padding-bottom: 7px;
   vertical-align: middle;
   background-color: #f7f3ec;
 }
@@ -2178,6 +2206,7 @@ input.search-field:focus {
   margin: 0;
   padding: 0;
   width: 220px;
+  font-family: "PT Sans", sans-serif, Arial;
   text-transform: uppercase;
 }
 
@@ -2202,15 +2231,13 @@ input.search-field:focus {
 }
 
 .control-buttons {
-  position: relative;
   display: flex;
+  margin-left: 42px;
+  padding-top: 8px;
 }
 
 .down-icon {
-  position: absolute;
   display: block;
-  top: 6px;
-  left: 75px;
   width: 11px;
   height: 10px;
   opacity: 0.3;
@@ -2222,29 +2249,27 @@ input.search-field:focus {
 }
 
 .up-icon {
-  position: absolute;
   display: block;
-  top: 6px;
-  left: 45px;
   width: 11px;
   height: 10px;
+  margin-right: 20px;
 }
 
-.up-icon svg path,
+.up-icon svg,
 .up-icon {
   fill: #c5c5c5;
 }
 
-.up-icon:hover svg path,
+.up-icon:hover svg,
 .up-icon,
-.down-icon:hover svg path,
+.down-icon:hover svg,
 .down-icon {
   fill: #231f20
 }
 
-.up-icon:active svg path,
+.up-icon:focus svg,
 .up-icon,
-.down-icon:active svg path,
+.down-icon:focus svg,
 .down-icon {
   fill: #ee3643
 }
@@ -2267,30 +2292,16 @@ input.search-field:focus {
 }
 
 /*стилизация фильтра*/
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .filter-heading {
   display: block;
   margin: 0;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 19px;
   margin-bottom: 12px;
   padding-top: 9px;
   padding-left: 18px;
   padding-bottom: 10px;
+  font-family: "PT Sans", sans-serif, Arial;
   text-align: left;
   vertical-align: middle;
   text-transform: uppercase;
@@ -2304,6 +2315,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 19px;
   border-bottom: 1px solid #e5e5e5;
+}
+
+.filter .supply {
+  border-bottom: none;
 }
 
 .filter legend {
@@ -2323,9 +2338,21 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.filter-input:disabled + label {
-  color: #c5c5c5;
-  opacity: 0.5;
+input[type="checkbox"]:disabled + label,
+input[type="radio"]:disabled + label {
+  color: #999999;
+  text-decoration: none;
+  cursor: auto;
+}
+
+input[type="radio"]:disabled + label::before,
+input[type="checkbox"]:disabled + label::before {
+  color: #e9e9e9;
+}
+
+input[type="radio"]:disabled + label:hover::before,
+input[type="checkbox"]:disabled + label:hover::before {
+  opacity: 0.7;
 }
 
 .filter-input-checkbox + label::before {
@@ -2380,7 +2407,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.7;
 }
 
-label:hover::before,
+.by-supply label:hover::before,
+.producers label:hover::before,
 .filter-input-radio:checked + label:hover::before,
 .filter-input-checkbox:checked + label:hover::before {
   opacity: 1;
@@ -2393,8 +2421,9 @@ label:hover::before,
   margin-top: 35px;
   padding: 11px 14px;
   width: 140px;
-  background-color: #ffffff;
+  font-family: "PT Sans", sans-serif, Arial;
   text-transform: uppercase;
+  background-color: #ffffff;
   outline: none;
 }
 
@@ -2549,6 +2578,7 @@ label:hover::before,
   width: 36px;
   height: 36px;
   margin-right: 10px;
+  font-family: "PT Sans", sans-serif, Arial;
   line-height: 36px;
   text-align: center;
   text-decoration: none;
@@ -2603,9 +2633,10 @@ label:hover::before,
   display: block;
   margin: 0;
   margin-top: 26px;
-  margin-left: -1px;
+  margin-left: 2px;
   margin-bottom: 68px;
   padding: 0;
+  font-family: "PT Sans", sans-serif, Arial;
 }
 
 .footer-catalog {
@@ -2614,24 +2645,6 @@ label:hover::before,
 
 /*стилизуем окно обратной связи*/
 .fixed-overlay {
-  position: fixed;
-  display: none;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fixed-overlay-map {
-  position: fixed;
-  display: none;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.fixed-overlay-notification {
   position: fixed;
   display: none;
   z-index: 9999;
@@ -2694,6 +2707,7 @@ label:hover::before,
 .modal-feedback input[type=text]:focus,
 .modal-feedback textarea:focus {
   border: 2px solid #ee3643;
+  outline: none;
 }
 
 .modal-feedback textarea {
@@ -2712,7 +2726,6 @@ label:hover::before,
 .modal-feedback label {
   display: block;
   margin-bottom: 10px;
-  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
 }
