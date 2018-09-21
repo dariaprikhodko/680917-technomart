@@ -58,6 +58,15 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.basket-catalog {
+  background-color: #ee3643;
+}
+
+.basket-catalog:hover,
+.basket-catalog:focus {
+  background-color: #ca2c37;
+}
+
 .user-navigation a:hover,
 .user-navigation a:focus {
   background-color: #212a3a;
@@ -67,6 +76,7 @@ input[type="radio"].visually-hidden {
   background-color: #161d29;
   color: #8b8e94;
 }
+
 
 .login-link:hover,
 .login-link:focus,
