@@ -1,5 +1,6 @@
 /*Базовая стилизация*/
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "Cuprum", Arial, sans-serif;
@@ -194,20 +195,20 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-.promo-item:first-child,
-.promo-item:nth-child(5) {
+.promo-materials,
+.promo-delivery {
   background-color: #ffc047;
 }
 
-.promo-item:nth-child(2) {
+.promo-tools {
   background-color: #3bbce3;
 }
 
-.promo-item:nth-child(3) {
+.promo-technic {
   background-color: #dc91d8;
 }
 
-.promo-item:nth-child(4) {
+.promo-discount {
   background-color: #8ed78f;
 }
 
@@ -234,25 +235,26 @@ input[type="radio"].visually-hidden {
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px 10px;
-  background-color: #ee3643;
-  -webkit-box-shadow: inset 0 -5px  #9a212a;
-          box-shadow: inset 0 -5px  #9a212a;
-  font-size: 24px;
-  line-height: 24px;
+  background: url("../img/main-logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  color: #ffffff;
+
 }
 
 .main-header-logo[href]:hover,
 .main-header-logo[href]:focus {
-  background-color: #ca2c37;
+  background: url("../img/main-logo-hover.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .main-header-logo[href]:active {
-  background-color: #ba2732;
+  background: url("../img/main-logo-active.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .slider-promo h2 {
@@ -1081,6 +1083,10 @@ input.search-field:focus {
   margin-bottom: 0;
 }
 
+.promo-discount {
+  margin-right: 0;
+}
+
 .button-promo {
   display: block;
   width: 135px;
@@ -1090,10 +1096,6 @@ input.search-field:focus {
           box-sizing: border-box;
   text-align: center;
   border-radius: 3px;
-}
-
-.promo-discount {
-  margin-right: 0;
 }
 
 .promo-materials::before {
@@ -1231,10 +1233,11 @@ input.search-field:focus {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
-  }
+  vertical-align: top;
+}
 
-#product-1:checked~.slider-controls label[for=product-1],
-#product-2:checked~.slider-controls label[for=product-2] {
+.drill-slide:checked~.slider-controls label[for=product-2],
+.perforator-slide:checked~.slider-controls label[for=product-1] {
   background: #ee3643;
 }
 
@@ -1466,37 +1469,47 @@ input.search-field:focus {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   text-align: center;
+  overflow: hidden;
 }
 
 .tools-list {
   font-size: 0;
 }
 .tools-item {
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   font-size: 16px;
 }
 
-.tools-item .flag {
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  z-index: 20;
-  width: 60px;
-  height: 60px;
-  text-indent: -1000px;
+.new-flag {
+  position: relative;
   overflow: hidden;
 }
 
-.tools-item .flag-new {
-  background-image: url("../img/new-flag.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.new-flag::after {
+  content: "new";
+  position: absolute;
+  top: 5px;
+  right: -40px;
+  z-index: 0;
+  display: block;
+  width: 120px;
+  height: 28px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  font-kerning: none;
+  color: #ffffff;
+  background-color: #ff5257;
+  transform: rotate(45deg);
 }
 
 .tool-photo {
   margin: 0;
   width: 218px;
   height: 168px;
+  overflow: hidden;
 }
 
 .tool-photo > img {
@@ -1641,6 +1654,7 @@ input.search-field:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 940px;
@@ -1650,59 +1664,34 @@ input.search-field:focus {
   list-style: none;
 }
 
-.brand-items:nth-child(4n) {
+.brand-logo {
+  display: flex;
+  width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.brand-logo:nth-child(4n) {
   margin-right: 0;
 }
 
-.brand-items {
-  display: inline-block;
-  width: 218px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  text-align: center;
+.brand-logo:nth-child(4) {
+  padding-bottom: 20px;
 }
 
-.brand-logo {
-  display: block;
-  width: 218px;
-  height: 143px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
+.brand-logo:nth-child(8) {
+  padding-bottom: 10px;
 }
 
 .brand-logo > img {
+  display: block;
   margin: auto;
-}
-
-.bosch-img {
-  padding-top: 52px;
-}
-
-.makita-img,
-.dewalt-img {
-  padding-top: 49px;
-}
-
-.interskol-img {
-  padding-top: 20px;
-}
-
-.hitachi-img {
-  padding-top: 59px;
-}
-
-.lg-img {
-  padding-top: 36px;
-}
-
-.aeg-img {
-  padding-top: 23px;
-}
-
-.metabo-img {
-  padding-top: 33px;
+  vertical-align: middle;
 }
 
 /* нижний слайдер */
@@ -2288,10 +2277,11 @@ input.search-field:focus {
 .personal-orders {
   position: relative;
   display: inline-block;
+  width: 80px;
   margin: 0;
   margin-right: 27px;
   padding: 0;
-  width: 80px;
+  vertical-align: top;
 }
 
 .personal-orders::before {
@@ -2310,6 +2300,7 @@ input.search-field:focus {
   width: 105px;
   margin: 0;
   padding: 0;
+  vertical-align: top;
 }
 
 .personal-account a,
@@ -2544,12 +2535,12 @@ input.search-field:focus {
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 35px;
 }
 
 .filter-option label {
   position: relative;
   display: block;
+  padding-left: 38px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2578,7 +2569,7 @@ input.search-field:focus {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -35px;
+  left: 5px;
   top: 0;
   width: 24px;
   height: 23px;
@@ -2592,7 +2583,7 @@ input.search-field:focus {
   content: "";
   position: absolute;
   top: 0px;
-  left: -35px;
+  left: 5px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -2604,7 +2595,7 @@ input.search-field:focus {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: 8px;
   top: -1px;
   width: 25px;
   height: 25px;
@@ -2617,7 +2608,7 @@ input.search-field:focus {
 .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
-  left: -38px;
+  left: 8px;
   top: -1px;
   width: 25px;
   height: 25px;
@@ -2717,6 +2708,7 @@ input.search-field:focus {
   width: 95px;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: top;
 }
 
 .price-controls {
