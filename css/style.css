@@ -1697,7 +1697,7 @@ input.search-field:focus {
 /* нижний слайдер */
 .slider-services-block {
   width: 100%;
-  margin-bottom: 41px;
+  margin-bottom: 43px;
   background-color: #f4f8fa;
 }
 
@@ -2056,7 +2056,7 @@ input.search-field:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 610px;
-  padding-top: 38px;
+  padding-top: 39px;
 }
 
 .logo-contacts-wrapper {
@@ -2540,7 +2540,7 @@ input.search-field:focus {
 .filter-option label {
   position: relative;
   display: block;
-  padding-left: 38px;
+  padding-left: 35px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2569,7 +2569,7 @@ input.search-field:focus {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 2px;
   top: 0;
   width: 24px;
   height: 23px;
@@ -2583,7 +2583,7 @@ input.search-field:focus {
   content: "";
   position: absolute;
   top: 0px;
-  left: 5px;
+  left: 2px;
   width: 27px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
@@ -2595,7 +2595,7 @@ input.search-field:focus {
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 2px;
   top: -1px;
   width: 25px;
   height: 25px;
@@ -2608,7 +2608,7 @@ input.search-field:focus {
 .filter-input-radio:checked + label::before {
   content: "";
   position: absolute;
-  left: 8px;
+  left: 2px;
   top: -1px;
   width: 25px;
   height: 25px;
@@ -2622,6 +2622,10 @@ input.search-field:focus {
 .producers label:hover::before,
 .filter-input-radio:checked + label:hover::before,
 .filter-input-checkbox:checked + label:hover::before {
+  opacity: 1;
+}
+
+.filter-input:focus+label::before {
   opacity: 1;
 }
 
