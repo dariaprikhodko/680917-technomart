@@ -2065,7 +2065,7 @@ input.search-field:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 610px;
-  padding-top: 39px;
+  padding-top: 38px;
 }
 
 .logo-contacts-wrapper {
@@ -2530,7 +2530,7 @@ input.search-field:focus {
   border: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -2642,7 +2642,7 @@ input.search-field:focus {
   cursor: pointer;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
-  margin-top: 35px;
+  margin-top: 40px;
   padding: 11px 14px;
   width: 140px;
   font-family: "PT Sans", sans-serif, Arial;
